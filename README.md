@@ -8,6 +8,7 @@ Basic Python programs from beginning to Advanced
 - Comprehensions of different Python Data Structures
 - Generators
 - Class and Objects
+- Method Overriding and Overloading
 - Setter and Getters
 - Inheritence & Duck Typing
 - Basics of Automation
