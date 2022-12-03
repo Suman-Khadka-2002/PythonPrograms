@@ -13,3 +13,8 @@ Basic Python programs from beginning to Advanced
 - Inheritence & Duck Typing
 - Basics of Automation
 
+## SnapShots of Codes
+#### Inheritence
+![Inheritence Image](./images/inheritence.png)
+#### Super function in Python
+![Super function](./images/superkeyword.png)
