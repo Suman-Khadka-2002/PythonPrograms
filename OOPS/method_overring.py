@@ -8,7 +8,8 @@ class Vehicle(object):
 
     def get_details(self):
         return f"{self.name} {self.vehicle_type}"
-
+    
+    @classmethod
     def update_tax(cls, new_tax):
         cls.Tax = new_tax
 
