@@ -1,8 +1,10 @@
 # Python-Programs
+
 Basic Python programs from beginning to Advanced
 
 ## Table of Contents
-- Basics of Python 
+
+- Basics of Python
 - Control Flow & Loops
 - Lists, Sets, Tuples and Dictionaries
 - Comprehensions of different Python Data Structures
@@ -14,7 +16,15 @@ Basic Python programs from beginning to Advanced
 - Basics of Automation
 
 ## SnapShots of Codes
+
 #### Inheritence
+
 ![Inheritence Image](./images/inheritence.png)
+
 #### Super function in Python
+
 ![Super function](./images/superkeyword.png)
+
+#### Method Overriding
+
+![Method Overriding](./images/methodoverriding.png)
