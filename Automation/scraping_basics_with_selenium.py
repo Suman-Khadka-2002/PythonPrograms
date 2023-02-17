@@ -23,11 +23,23 @@ class WebScraper:
         self.data = {"item_name": [], "item_price": []}
 
     def convert_data_to_csv(self, file_name, pages):
+        """Convert the data to CSV format
+
+        Args:
+            file_name (str): Give the name of the file to be converted
+            pages (int): No of pages you want to scrape
+        """
         self.scrape_data(pages)
         df = pd.DataFrame(data=self.data)
         df.to_csv(f"{file_name}.csv")
 
     def scrape_data(self, pages):
+        """
+        Scrape the men's clothing data from the daraz
+
+        Args:
+            pages (int): enter teh number of pages you want to scrape
+        """
         driver = self.driver
         driver.get(self.link)
         WebDriverWait(driver, 20).until(
@@ -71,5 +83,5 @@ class WebScraper:
 
 if __name__ == "__main__":
     w = WebScraper()
-    # w.scrape_data()
-    w.convert_data_to_csv(file_name="mens_fashion", pages=20)
+
+    w.convert_data_to_csv(file_name="mens_fashions_daraz", pages=20)
