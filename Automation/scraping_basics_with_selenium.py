@@ -22,8 +22,9 @@ class WebScraper:
         self.driver = webdriver.Chrome(options=self.options)
         self.data = {"item_name": [], "item_price": []}
 
-    def convert_data_to_csv(self, file_name, pages):
-        """Convert the data to CSV format
+    def convert_data_to_csv(self, file_name, pages=10):
+        """
+        Convert the data to CSV format
 
         Args:
             file_name (str): Give the name of the file to be converted
@@ -38,7 +39,7 @@ class WebScraper:
         Scrape the men's clothing data from the daraz
 
         Args:
-            pages (int): enter teh number of pages you want to scrape
+            pages (int): enter the number of pages you want to scrape
         """
         driver = self.driver
         driver.get(self.link)
@@ -83,5 +84,4 @@ class WebScraper:
 
 if __name__ == "__main__":
     w = WebScraper()
-
     w.convert_data_to_csv(file_name="mens_fashions_daraz", pages=20)
